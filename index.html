@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apptastico - We design iOS apps</title>
+    <!-- Enlazamos nuestro archivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Utilizamos FontAwesome para algunos iconos como el monitor, tuerca, etc. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ==========================================
+       SECCIÓN SUPERIOR (HERO / ENCABEZADO)
+       ========================================== -->
+    <header class="hero-section">
+        <!-- Navbar (Logo y Menú) -->
+        <div class="container hero-nav">
+            <!-- Logo a la izquierda -->
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Apptastico Logo">
+            </a>
+
+            <!-- Menú de Navegación a la derecha -->
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Contenido Principal (Imagen y Texto) -->
+        <div class="container hero-content">
+            <!-- Imagen del teléfono -->
+            <div class="hero-image">
+                <img src="images/iphone.png" alt="iPhone displaying our app design"
+                    onerror="this.src='images/Iphone_17.jpg'">
+            </div>
+
+            <!-- Textos a la derecha -->
+            <div class="hero-text">
+                <h1>We design iOS apps</h1>
+                <p class="subtitle">Ut In Nulla Enim. Phasellus Molestie Magna Non Est Bibendum Non Venenatis ut In
+                    Nulla Enim. Phasellus Molestie.</p>
+                <p class="description">Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus
+                    rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie tempor. Suspendisse dictum
+                    feugiat.</p>
+
+                <!-- Botones de Acción -->
+                <div class="hero-actions">
+                    <a href="#" class="btn btn-primary">Request a quote</a>
+                    <span class="or-text">
+                        or <i class="fa-solid fa-desktop monitor-icon"></i>
+                        <a href="#" class="link-underline">See our recent work</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==========================================
+       SECCIÓN DE MARCAS / CLIENTES
+       ========================================== -->
+    <section class="clients-section">
+        <div class="container clients-logos">
+            <!-- Iconos genéricos simulando marcas, usando text-color claro -->
+            <i class="fa-brands fa-dribbble client-icon"></i>
+            <i class="fa-brands fa-ebay client-icon"></i>
+            <i class="fa-brands fa-medium client-icon"></i> <!-- Parece letra M (McDonalds) -->
+            <i class="fa-brands fa-envira client-icon"></i> <!-- Parece logotipo Adidas (hoja/stripes) -->
+            <i class="fa-brands fa-empire client-icon"></i> <!-- Icono simulado para el logotipo derecho (EA) -->
+        </div>
+    </section>
+
+    <!-- ==========================================
+       SECCIÓN DE CARACTERÍSTICAS (3 COLUMNAS)
+       ========================================== -->
+    <section class="features-section container">
+        <!-- Columna 1 -->
+        <div class="feature-box">
+            <div class="feature-icon">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <h3>Engaging interfaces</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor
+                dui sagittis.</p>
+            <a href="#" class="btn btn-secondary">Read more</a>
+        </div>
+
+        <!-- Columna 2 -->
+        <div class="feature-box">
+            <div class="feature-icon">
+                <i class="fa-solid fa-flask"></i>
+            </div>
+            <h3>Usable designs</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor
+                dui sagittis.</p>
+            <a href="#" class="btn btn-secondary">Read more</a>
+        </div>
+
+        <!-- Columna 3 -->
+        <div class="feature-box">
+            <div class="feature-icon">
+                <i class="fa-solid fa-gears"></i>
+            </div>
+            <h3>Solid development</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor
+                dui sagittis.</p>
+            <a href="#" class="btn btn-secondary">Read more</a>
+        </div>
+    </section>
+
+    <!-- ==========================================
+       SECCIÓN DE PROYECTOS SELECCIONADOS
+       ========================================== -->
+    <section class="projects-section container">
+        <div class="section-heading">
+            <i class="fa-solid fa-message heading-icon bubble-icon"></i>
+            <h2>Selected projects</h2>
+        </div>
+
+        <div class="projects-grid">
+            <div class="project-item">
+                <img src="images/Galaxy S 25 ULTRA.jpg" alt="Galaxy Project">
+            </div>
+            <div class="project-item">
+                <img src="images/Huawei Pura 80.jpg" alt="Huawei Project">
+            </div>
+            <div class="project-item">
+                <img src="images/Motorola Edge 50 ULTRA.webp" alt="Motorola Project">
+            </div>
+            <div class="project-item">
+                <img src="images/Iphone_17.jpg" alt="Iphone_17">
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+       SECCIÓN PRE-FOOTER (BLOG & TWITTER)
+       ========================================== -->
+    <section class="pre-footer container">
+        <!-- Mitad Izquierda: Blog -->
+        <div class="blog-section">
+            <div class="section-heading">
+                <i class="fa-solid fa-rss rss-icon"></i>
+                <h2>From our blog</h2>
+            </div>
+
+            <article class="blog-post">
+                <div class="blog-img">
+                    <img src="images/img1.png" alt="Blog post image">
+                </div>
+                <div class="blog-info">
+                    <h4>Our work process reviewed</h4>
+                    <p>Phasellus molestie magna non est bibendum non venenatis nisi tempor. Suspendisse dictum feugiat
+                        nisl ut dapibus mauris. <a href="#">Read more...</a></p>
+                    <span class="date">01/01/13 - 10:21 AM</span>
+                </div>
+            </article>
+
+            <article class="blog-post">
+                <div class="blog-img">
+                    <img src="images/img2.png" alt="Blog post image">
+                </div>
+                <div class="blog-info">
+                    <h4>Who we are at Appcompany</h4>
+                    <p>Phasellus molestie magna non est bibendum non venenatis nisi tempor. Suspendisse dictum feugiat
+                        nisl ut dapibus mauris. <a href="#">Read more...</a></p>
+                    <span class="date">01/01/13 - 10:21 AM</span>
+                </div>
+            </article>
+
+            <a href="#" class="older-entries">Older entries</a>
+        </div>
+
+        <!-- Mitad Derecha: Twitter -->
+        <div class="twitter-section">
+            <div class="section-heading">
+                <i class="fa-brands fa-twitter twitter-icon"></i>
+                <h2>Our Twitter feed</h2>
+            </div>
+
+            <div class="tweet">
+                <p><strong>@Apptastico:</strong> In <a href="#">pellentesque.com</a> faucibus vestibulum. Nulla at nulla
+                    justo, eget Duis aliquet egestas <a href="#">#purus</a> in <a href="#">#blandit</a>.</p>
+                <span class="date">01/01/13 - 10:21 AM</span>
+            </div>
+
+            <div class="tweet">
+                <p><strong>@Apptastico:</strong> In <a href="#">pellentesque.com</a> faucibus vestibulum. Nulla at nulla
+                    justo, eget Duis aliquet egestas <a href="#">#purus</a> in <a href="#">#blandit</a>.</p>
+                <span class="date">01/01/13 - 10:21 AM</span>
+            </div>
+
+            <div class="tweet">
+                <p><strong>@Apptastico:</strong> In <a href="#">pellentesque.com</a> faucibus vestibulum. Nulla at nulla
+                    justo, eget Duis aliquet egestas <a href="#">#purus</a> in <a href="#">#blandit</a>.</p>
+                <span class="date">01/01/13 - 10:21 AM</span>
+            </div>
+
+            <a href="#" class="follow-twitter">Follow us on Twitter</a>
+        </div>
+    </section>
+
+    <!-- ==========================================
+       FOOTER (PIE DE PÁGINA)
+       ========================================== -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p>&copy; Christoffer Jensen 2013</p>
+
+            <!-- Iconos sociales que usan imágenes reales de la carpeta -->
+            <div class="social-links">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                    <img src="images/Facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                    <img src="images/Twitter.png" alt="Twitter">
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <img src="images/Linkedin.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
