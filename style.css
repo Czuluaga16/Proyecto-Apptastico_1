@@ -1,10 +1,3 @@
-/*
-  ===========================================
-  1. ESTILOS BASE Y RESETEO
-  ===========================================
-  Aplicamos box-sizing border-box y quitamos márgenes por defecto
-  para tener control total de las medidas.
-*/
 * {
     margin: 0;
     padding: 0;
@@ -22,32 +15,20 @@ a {
     text-decoration: none;
 }
 
-/* 
-  Contenedor central:
-  Limita el ancho de la página en pantallas grandes y centra el contenido 
-*/
 .container {
     width: 90%;
     max-width: 960px;
     margin: 0 auto;
 }
 
-/*
-  ===========================================
-  2. SECCIÓN HERO (Encabezado principal)
-  ===========================================
-*/
 .hero-section {
     background-color: #5b6a7a;
-    /* Color azul-gris oscuro de fondo */
     color: #ffffff;
     padding-top: 30px;
 }
 
-/* Barra de Navegación */
 .hero-nav {
     display: flex;
-    /* Flexbox para ubicar el logo a la izquierda y menú a la derecha */
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
@@ -61,39 +42,33 @@ a {
 
 .main-nav a {
     color: #d1dae2;
-    /* Texto gris claro */
+
     font-weight: bold;
     padding: 6px 15px;
     border-radius: 20px;
-    /* Hace que el fondo de los links se vea ovalado */
     font-size: 0.85rem;
     transition: all 0.3s ease;
 }
 
-/* El link "Home" o al pasar el ratón */
 .main-nav a.active,
 .main-nav a:hover {
     background-color: #4b5a68;
     color: #ffffff;
 }
 
-/* Contenido Principal del Hero (Imagen y Texto) */
 .hero-content {
     display: flex;
     align-items: flex-end;
-    /* Alineamos abajo para que el teléfono quede tocando el margen inferior */
     justify-content: space-between;
 }
 
 .hero-image {
     flex: 0 0 45%;
-    /* El teléfono toma un 45% del ancho disponible */
     text-align: center;
 }
 
 .hero-image img {
     max-width: 100%;
-    /* Ponemos un límite de alto para que el celular no se vea gigante */
     max-height: 520px;
     display: block;
     margin: 0 auto;
@@ -101,7 +76,6 @@ a {
 
 .hero-text {
     flex: 0 0 50%;
-    /* El texto toma un 50% del ancho */
     padding-bottom: 90px;
 }
 
@@ -127,7 +101,6 @@ a {
     margin-bottom: 35px;
 }
 
-/* Botones y acciones del Hero */
 .hero-actions {
     display: flex;
     align-items: center;
@@ -146,9 +119,7 @@ a {
 
 .btn-primary {
     background-color: #4ba3e3;
-    /* Botón celeste */
     color: #ffffff;
-    /* Sombra debajo del botón para darle volumen (diseño sólido) */
     box-shadow: 0 4px 0 #348bc6;
 }
 
@@ -173,15 +144,9 @@ a {
     text-decoration: underline;
 }
 
-/*
-  ===========================================
-  3. SECCIÓN LOGOS DE CLIENTES
-  ===========================================
-*/
 .clients-section {
     background-color: #e6e6e6;
     border-bottom: 1px solid #dcdcdc;
-    /* Una ligera franja de sombra superior e inferior le da profundidad */
     box-shadow: inset 0 6px 10px rgba(0, 0, 0, 0.03), inset 0 -3px 5px rgba(0, 0, 0, 0.02);
     padding: 30px 0;
 }
@@ -191,7 +156,6 @@ a {
     justify-content: space-around;
     align-items: center;
     color: #b5b5b5;
-    /* Iconos grises claros */
     font-size: 3rem;
 }
 
@@ -199,11 +163,6 @@ a {
     color: #999;
 }
 
-/*
-  ===========================================
-  4. SECCIÓN CARACTERÍSTICAS (3 COLUMNAS)
-  ===========================================
-*/
 .features-section {
     display: flex;
     justify-content: space-between;
@@ -214,18 +173,14 @@ a {
 
 .feature-box {
     flex: 1;
-    /* Esto hace que cada una de las 3 columnas ocupe el mismo espacio */
 }
 
-/* Los tres iconos circulares azules */
 .feature-icon {
     width: 120px;
     height: 120px;
     margin: 0 auto 20px;
     border: 5px solid #6b8699;
-    /* Borde grueso gris-azulado */
     border-radius: 50%;
-    /* Esto es lo que lo hace totalmente redondo */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -250,7 +205,6 @@ a {
     color: #ffffff;
     padding: 8px 22px;
     font-size: 0.8rem;
-    /* El diseño pide esquinas ligeramente redondas para éste, no ovaladas totales */
     border-radius: 4px;
     box-shadow: 0 3px 0 #348bc6;
 }
@@ -259,11 +213,6 @@ a {
     background-color: #3b93d0;
 }
 
-/*
-  ===========================================
-  5. TÍTULOS DE SECCIONES (Comunes para las de abajo)
-  ===========================================
-*/
 .section-heading {
     display: flex;
     align-items: center;
@@ -285,27 +234,18 @@ a {
     color: #9ecc65;
 }
 
-/* Verde como en la imagen */
 .rss-icon {
     color: #fc9b39;
 }
 
-/* Naranja para el blog */
 .twitter-icon {
     color: #4ba3e3;
 }
 
-/* Azul para Twitter */
 
-/*
-  ===========================================
-  6. SECCIÓN PROYECTOS SELECCIONADOS
-  ===========================================
-*/
 .projects-section {
     padding: 20px 0 60px;
     border-bottom: 1px solid #eaeaea;
-    /* Línea divisoria inferior */
 }
 
 .projects-grid {
@@ -316,7 +256,6 @@ a {
 
 .project-item {
     flex: 1;
-    /* Para simular el borde de una foto impresa o un cuadro */
     border: 1px solid #dfdfdf;
     padding: 6px;
     background-color: #ffffff;
@@ -325,24 +264,16 @@ a {
 
 .project-item img {
     width: 100%;
-    /* Forzamos que todas las imágenes tengan la misma proporción (ancho / alto) */
     aspect-ratio: 1 / 1;
-    /* Ajusta la imagen dentro de la caja sin recortarla (ideal para ver los celulares completos) */
     object-fit: contain;
     background-color: #ffffff;
     display: block;
 }
 
-/*
-  ===========================================
-  7. SECCIÓN PRE-FOOTER (Blog & Twitter)
-  ===========================================
-*/
 .pre-footer {
     display: flex;
     justify-content: space-between;
     gap: 60px;
-    /* Distancia entre las columnas de la mitad */
     padding: 50px 0;
 }
 
@@ -351,7 +282,6 @@ a {
     flex: 1;
 }
 
-/* ---------- Columna de Blog ---------- */
 .blog-post {
     display: flex;
     gap: 15px;
@@ -399,7 +329,6 @@ a {
     margin-top: 10px;
 }
 
-/* ---------- Columna de Twitter ---------- */
 .tweet {
     margin-bottom: 20px;
     font-size: 0.8rem;
@@ -410,11 +339,6 @@ a {
     color: #4ba3e3;
 }
 
-/*
-  ===========================================
-  8. FOOTER FINAL
-  ===========================================
-*/
 .main-footer {
     border-top: 1px solid #eaeaea;
     padding: 25px 0;
@@ -444,17 +368,11 @@ a {
 
 .social-links img:hover {
     opacity: 0.7;
-    /* Hace que se pongan un poco tenues al pasar el ratón */
+
 }
 
-/*
-  ===========================================
-  9. DISEÑO RESPONSIVO (Móviles, Tablets, Laptops, Desktops)
-  ===========================================
-  Ajustamos el diseño basados en los puntos de corte solicitados.
-*/
 
-/* 1. Smaller smartphones (352px - 480px) */
+
 @media (min-width: 352px) and (max-width: 480px) {
 
     .hero-nav,
@@ -496,7 +414,6 @@ a {
         gap: 30px;
     }
 
-    /* Los proyectos pasan a 1 sola columna ocupando todo el ancho */
     .projects-grid {
         display: flex;
         flex-direction: column;
@@ -518,7 +435,6 @@ a {
     }
 }
 
-/* 2. Tablets & larger smartphones (481px - 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
 
     .hero-nav,
@@ -555,7 +471,6 @@ a {
         gap: 40px;
     }
 
-    /* Ajuste para los proyectos: Pasan a 2 columnas con flexbox */
     .projects-grid {
         display: flex;
         flex-wrap: wrap;
@@ -582,7 +497,6 @@ a {
     }
 }
 
-/* 3. Laptops, larger tablets in landscape, small desktops (769px - 920px) */
 @media (min-width: 769px) and (max-width: 920px) {
     .hero-text h1 {
         font-size: 2.5rem;
@@ -601,7 +515,6 @@ a {
         gap: 20px;
     }
 
-    /* Ajuste para los proyectos: Mantenemos 4 columnas con flexbox */
     .projects-grid {
         display: flex;
         flex-wrap: wrap;
@@ -620,15 +533,10 @@ a {
         flex: 0 0 90px;
     }
 
-    /* Imagen del post un poco más pequeña */
 }
 
-/* 4. Normal desktops (921px - 1279px) */
 @media (min-width: 921px) and (max-width: 1279px) {
 
-    /* En esta resolución el diseño normal o base de arriba funciona perfectamente 
-     porque el contenedor ya tiene max-width 960px.
-     Podemos usar flexbox para proyectos por consistencia. */
     .projects-grid {
         display: flex;
         flex-wrap: wrap;
@@ -640,15 +548,10 @@ a {
     }
 }
 
-/* 5. Larger desktops and monitors (1280px+) */
 @media (min-width: 1280px) {
 
-    /* Si la pantalla es muy grande, podríamos dejar el contenedor en 960px 
-     (comportamiento actual) o permitir que crezca un poco más si se desea.
-     El contenedor central ya maneja muy bien resoluciones grandes. */
     .container {
         max-width: 1100px;
-        /* Hacemos el contenedor un poco mayor para aprovechar el espacio */
     }
 
     .hero-text h1 {
